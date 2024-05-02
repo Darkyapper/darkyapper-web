@@ -26,8 +26,19 @@
         </div>
         <main>
             <div class = "part_one">
-                <h1>¡Bienvenido a mi página web!</h1>
+                <h1>¡Explora la creatividad de Darkyapper!</h1>
+                <p></p>
             </div>
         </main>
+        <script>
+            window.addEventListener('scroll', function() {
+                var header = document.querySelector('header');
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        </script>
     </body>
 </HTML>
